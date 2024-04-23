@@ -1,0 +1,75 @@
+Batch versus Real time scoring in your integrations
+Rafikah Halim
+2 years ago Updated
+Supported Destinations
+What models for what type of scoring?
+When does MadKudu update records? 
+Rate Limiting
+Retries
+F.A.Q
+I have a lot of volume, what can we do about it?
+Why aren't all of my leads synced to my integrations?
+What if I need to upload a large list?
+MadKudu can send scores to your integrations of choice. We integrate with half a dozen of integrations in which we’ll send predictions and segmentation to your Contacts or Accounts profiles. Learn more about our integrations.
+We push scores in two different ways:
+Real-Time: records are scored within 5-15 minutes of their creation in your CRM.
+Batch: a record's score is updated every 4-12 hours (time is dependent on the amount of data) with any new information or activity. 
+  Supported Destinations
+Destination Object Realtime (Fit model) Batch
+Salesforce Lead, Contact, Account ✅(not for accounts) ✅
+HubSpot Contact ✅ ✅
+Marketo Contact ✅ ✅
+Eloqua Contact ✅ ✅
+Segment Identify ❌ ✅
+Intercom Lead, User ✅ ❌
+Amazon S3 Contact ❌ ✅
+To begin sending scores to a new destination, connect your system to MadKudu in app.madkudu.com > Integrations and reach out to your customer success manager so that we can enable the right sync configuration on our end for you.
+  What models for what type of scoring?
+The Customer Fit scores can be pushed both in real-time and batch scoring at the Lead and Contact level
+The Likelihood to Buy scores are only available in batch scoring, since it takes some time to collect activity data before making predictions 
+The scoring of Salesforce Accounts is only available in batch scoring for Fit or Likelihood to Buy score 
+When does MadKudu update records? 
+In Salesforce for example: 
+Few minutes after the creation of a Lead/Contact in Salesforce, MadKudu will update the mk_customer_fit_* fields. This is the "realtime scoring" of the Customer Fit model. 
+Every 4-12h, MadKudu will update all the mk_* fields of Lead/Contact and Account if there is any update to push. This is the "batch scoring" for all the models. 
+the MK Customer Fit fields will rarely change over time unless there is a model update 
+the MK Likelihood to Buy and MK Lead Grade fields will likely change every day, as these fields contain the behavioral score, and some leads, contacts, and accounts have daily activity. Additionally, in the absence of activity, the score decreases over time on a daily basis. 
+This schedule is not fixed, this is a continuous process (Learn more here) 
+When a new version of a model is deployed from the Data Studio by your admin (or by our team upon request), expect more records to be updated especially if a new Customer Fit model is deployed. When a model is deployed, the updates will occur in batch scoring at the next sync process. 
+Rate Limiting
+Realtime scoring (MadKudu API rate limit)
+If we pull from your integrations more than 500 new records to score within a 5 minute period, MadKudu real-time scoring will queue any additional events and process those at a slower rate.
+Batch scoring (Destination rate limit)
+To guarantee the performance of their system, destination integrations (e.g. Salesforce, Marketo, Hubspot, Segment, ...) limit the number of API calls that they can process in a given timeframe. This is called rate limiting, which cannot be controlled by MadKudu 
+The consequence of that is that the sync of large volumes of data cannot be instantaneous. For example, if you load a list of 100,000 leads in one go in your CRM, this will impact how fast leads can be scored by MadKudu in your CRM.
+Here are the rate limits of some of our integrations:
+Retries
+When the push of scores in batch to a destination fails (because of the integration rate-limiting described above or any other reason outside of MadKudu's control) MadKudu will attempt 9 more times to score the record within the following 2 hours. 
+  F.A.Q
+I have a lot of volume, what can we do about it?
+It can become challenging to sync over 100k+ daily active users (DAU) with a CRM like Salesforce. That’s because:
+With Likelihood to Buy, we need to update scores as regularly as possible to make sure they’re up-to-date for your team to reach out to "ready to buy" prospects.
+We may hit daily rate limits from Salesforce (which results in delays in syncing).
+We’ve worked before with huge volumes of data so we’ll make sure to prepare a plan on how we can work with your current volume.
+Why aren't all of my leads synced to my integrations?
+Several things could be happening:
+We’ve been hitting API Quotas (see above for rate limiting) so we’re delaying the update.
+We apply filters on which leads are being sent to your integrations.
+On this last point, please reach out to your account manager and we’ll go through these filters together to make sure that they fit your needs.
+What if I need to upload a large list?
+Want to upload a large list of records to your CRM?
+You can either get the scores
+before uploading the list to your CRM using the MadKudu Bulk Scorer on a CSV file (only for customer fit score). 
+after uploading the list to your CRM and the sync process will start scoring the new records as described above in this article.
+The time it takes to score the list of records depends on the number of records in it.
+Was this article helpful?
+Yes No
+0 out of 0 found this helpful
+Have more questions? Submit a request
+Return to top
+Related articles
+Event mapping
+How Marketing Uses MadKudu
+Troubleshooting: Salesforce errors
+Customer Fit model
+Marketo

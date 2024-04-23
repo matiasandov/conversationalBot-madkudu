@@ -1,0 +1,35 @@
+What are the different models?
+Rafikah Halim
+1 year ago Updated
+Overview
+The Customer Fit model (demographic)
+The Likelihood to buy model (behavioral)
+The Lead Grade
+Are you more of a visual learner? Head this way for our video! 
+Video tutorials are only available to users logged in to the MadKudu help center. Click here to learn how to create an account in the MadKudu help center. 
+Overview
+Prediction models in Madkudu can help route and prioritize either people (leads & contacts) or companies (accounts).
+MadKudu offers 2 main categories of prediction models: 
+the Customer Fit model
+helps answer "who is this person?", "is the company they work for a good fit?"
+the Likelihood to Buy model (Behavioral)
+helps answers "how are they using our product?", "what actions are most correlated to conversion?", "is now a good time to reach out?"
+The third category of prediction models, the Lead Grade, is simply a combination of the two others.
+The Customer Fit model (demographic)
+Uses firmographic and demographic data — which allows you to check whether or not a lead or account matches your ideal customer profile (Who is this lead? Does this lead look qualified?). Because the model uses firmographic and demographic data as input, the scores will not change much over time. 
+The Likelihood to buy model (behavioral)
+Utilizes your behavioral data (in-app usage, website activity, marketing campaigns, etc.) to measure engagement of the lead or account (What has this lead been doing recently? Has the lead tried to engage with you?). Because the input of the model uses behavioral data, the scores are recomputed several times throughout the day. The behavioral score is all about timing.
+The Lead Grade
+Combines both Customer Fit and the Behavioral components. It enables you to identify the leads that are the most qualified and the most engaged. Because the Lead Grade has a behavioral component, it is also recomputed several times a day. Learn more about lead grades here.
+Note: MadKudu does not support nor offer an "Account Grade" 
+  Was this article helpful?
+Yes No
+0 out of 0 found this helpful
+Have more questions? Submit a request
+Return to top
+Related articles
+What are the different scores?
+Likelihood to buy
+How long does it take to score a lead?
+How to monitor your MadKudu Customer Fit model with the Predictions page?
+How Marketing Uses MadKudu

@@ -1,0 +1,44 @@
+Enrichment
+Margo Rey
+10 months ago Updated
+Definition
+Use cases
+What enrichment providers do MadKudu work with? 
+F.A.Q
+Does MadKudu resell data?
+Definition
+Enrichment on MadKudu platform includes firmographic, demographic and technographic data coming from
+first-party data from your internal systems (CRM, Marketing Automation...)
+e.g. team size you collect on the sign up form, company size your sales team adjusts after getting on a call with the prospect
+third-party data from vendors you contract directly with
+MadKudu gets this data through the systems you integrated with our platform.
+e.g. ZoomInfo, FunnelBeam, Clearbit, Intricately ...
+third-party data from vendors MadKudu partners with to use to provide scoring or segmentation to our customers.
+MadKudu partners with Clearbit, HG data and PredictLeads in addition to creating custom enrichment (spam detector, predicted revenue or predicted traffic ...)
+It transforms each new email or domain into a complete person or company profile, enriching your customer understanding, and giving your team the context necessary to take action.
+First-party data that is qualified to be used in your customer fit model(s) is demographic, firmographic, or technographic data that is stable in time, especially through the opportunity funnel. You only want to use fields that are populated at the creation of the lead/contact. Don’t use fields that are filled in (manually or automatically) as the opportunity moves through the funnel, since that will introduce a major bias in the model(s). MadKudu typically recommends to use enrichment such as country, industry, company size, title, if you have that.
+Use cases
+Enrichment can be used to
+determine if a Person or Company is a good fit for you through the Customer Fit scoring. Learn more.
+segment your leads or accounts with a computation directly exported to your CRM
+e.g. you would like to identify if an account in using a competitor solution. With MadKudu you can build a computation based on technographic data like: "is_using_competitor" which parses the techs a company is using Learn more
+What enrichment providers do MadKudu work with? 
+MadKudu partners with the following leaders in demographics, firmographics and technographics data
+Clearbit: turns email addresses and domain names into full prospect and company profiles with more than 85 demographic, firmographic and technographic data points.  Learn more.
+HG Insights (formerly HG Data): global leader in technology intelligence, providing behind the firewall Technology Install Data to help you segment your prospect based on their company tech stack. Learn more
+PredictLeads: provides Hiring data to help you identify which companies are growing and hiring in the role fit for your product.  Learn more. 
+MadKudu gets fresh data from these providers on a monthly basis.
+F.A.Q
+Does MadKudu resell data?
+No, MadKudu partners with data vendors to use in segmentation and predictions but does not resell or sync raw data directly to your CRM. Only predictions and segmentations built on top of this data can be pushed directly to your CRM.  
+  Was this article helpful?
+Yes No
+0 out of 0 found this helpful
+Have more questions? Submit a request
+Return to top
+Related articles
+Customer Fit: How MadKudu uses CRM data in the scoring
+Introduction to MadKudu
+MadKudu Data Studio: Customer Fit
+Installing MadKudu Sales Intelligence in Salesforce
+What are Aggregations ?

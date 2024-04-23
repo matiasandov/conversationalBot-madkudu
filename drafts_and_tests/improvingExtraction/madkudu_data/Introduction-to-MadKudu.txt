@@ -1,0 +1,58 @@
+Introduction to MadKudu
+Margo Rey
+1 month ago Updated
+How it works
+MadKudu Copilot
+MadKudu Scoring
+F.A.Q 
+How does MadKudu look like once implemented?
+How do I start sending data?
+Glossary
+  MadKudu translates signals into actions for your Sellers
+Madkudu's platform allows you to:
+send your sellers the right accounts and leads with AI scoring
+give your sellers playbooks that work, based on 1st party and 3rd party signals 
+provider your sellers with the right context to engage with prospects effectively 
+How it works
+Plug in your data tech stack.
+Install the MadKudu package in Salesforce and download the Chrome extension
+Tweak your mappings and scoring models 
+Enable your sellers
+  MadKudu ingests multiple sources of data to help you qualify your prospects and arm your sellers to engage with them
+Static enrichment: MadKudu partners with Clearbit, HG data, and PredictLeads to enrich your data. Are you already purchasing through ZoomInfo, Bombora, Datafox? No problem, MadKudu can also use this data. 
+CRM information: actually any data from your CRM (Leads, Contacts, Accounts, Opportunities), be it provided by a 3rd party or from your Marketing and Sales input, can be pulled to MadKudu's platform. 
+Product usage: Are you tracking your visitor and user behavior in your product? MadKudu has integrations for it as well to help you surface your most engaged users
+Marketing interactions: Your demand gen team is working hard on organizing webinars, events, and email campaigns to engage with prospects, and you are tracking these interactions in Marketo, Eloqua, HubSpot. Well, bring them into your scoring to add up to your product usage data and find your MQL/PQLs! 
+  MadKudu Copilot
+Available directly embedded Salesforce, in our Chrome extension and soon in your favorite Sales Engagement (Gong Engage, Outreach, Salesloft..) 
+Playbooks & Explore: Assist sales reps in tailoring their approach based on prospects' activities and intent signals. With the Playbooks inbox, they stay focused on the best approach for their prospects. With Explore they can slice and dice their prospects based on different filters and save reports. Learn more
+Account & Lead Intelligence: Surface information your Sales team needs when engaging with prospects, directly in Salesforce. Learn more.
+  MadKudu Scoring
+With MadKudu, qualify your prospects to send to Sales with AI scoring and directly in your CRM. 
+MadKudu ingests as much data as possible to predict the likelihood of a prospect to convert into a customer.
+Get full control of your scoring in the Data Studio, with insights on your Ideal Customer Profile and most important actions your prospects are taking. Learn more.
+MadKudu offers several models that fit different needs:
+Customer Fit: Looks at firmographics, demographics and technographic data to identify who from your Leads and Accounts are most likely to convert (Who is this person? Is the company they work for a good fit?)
+Likelihood to Buy: Looks at any interaction with your website, product, marketing team, sales team to identify patterns of your Leads and Accounts behaviors that lead to conversions. (What has this lead been doing recently?)
+Lead Grade: Combines the Customer Fit and Likelihood to Buy into one score to help you simplify your workflows
+We configure these models independently so if you’re not sure which ones are enabled in your account, reach out to your Customer Success Manager.
+  F.A.Q 
+How does MadKudu look like once implemented?
+Just follow this link and you'll see!
+How do I start sending data?
+We have dozens of integrations with best-in class systems like Segment, Salesforce, Hubspot, Marketo, Snowflake, BigQuery...etc. You can enable these by the click of a button. Learn more about our integrations 
+Start by creating an account at app.madkudu.com
+Once logged in, the left navigation menu, click on the Integrations icon. The next screen will show you a list of all available integrations. To enable one, click on it and follow the instructions.
+  Glossary
+Here's a guide to MadKudu's lingo. 
+Was this article helpful?
+Yes No
+3 out of 3 found this helpful
+Have more questions? Submit a request
+Return to top
+Related articles
+How Marketing Uses MadKudu
+Batch versus Real time scoring in your integrations
+Customer Fit model
+What are the different scores?
+Event mapping

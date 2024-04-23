@@ -1,0 +1,73 @@
+What are the different scores?
+Rafikah Halim
+1 year ago Updated
+How do I see MadKudu Intelligence?
+What are the names of these fields?
+What's the link between the segments and the scores? 
+What does it look like in my CRM?
+Do I have to display all these fields?
+Can I rename the standard MadKudu attributes?
+Can I add aggregated behavioral attributes?
+Can the MadKudu team help with adding these Salesforce fields?
+Where do I set up the mapping of MadKudu Intelligence to my Salesforce fields?
+We push several fields to your CRM, let's summarize what they are.
+How do I see MadKudu Intelligence?
+If you are on a Pro Plan, you have 3 Lead/Contact level models (more details about the models here). 
+the Customer Fit model
+the Likelihood to Buy model
+the Lead Grade
+If you are on a Growth Plan, you will have one model, the Customer Fit model at the Lead/Contact level.
+You may also upgrade your subscription with Account level scoring (for Salesforce only)
+The Account Fit (Customer Fit)
+The Account Engagement (Likelihood to Buy) + Most Likely Persona
+  For each model, we push 3-4 fields to your CRM: 
+a segment
+a score: integer from 0 to 100 in case you need more granularity than the segment
+some emojis (nicer than words to display to your SDRs - Salesforce only)
+some signals : these are a list of positive and negative reasons that explain why the lead has been scored this way. These reasons are not exclusive but they give the Sales team some visibility and context.
+What are the names of these fields?
+To find the exact standard name in each system, please refer to this documentation.
+What's the link between the segments and the scores? 
+Customer Fit model 
+⭐️⭐️⭐️  Very good segment: scores from 85 to 100
+⭐️⭐️      Good segment: scores from 70 to 84
+⭐️          Medium segment: scores from 50 to 69
+❌          Low segment: scores from 0 to 49
+Likelihood to Buy model 
+🔥🔥🔥  Very high segment: scores from 85 to 100
+🔥🔥      High segment: scores from 70 to 84
+🔥          Medium segment: scores from 50 to 69
+❄️          Low segment: scores from 0 to 49
+Lead Grade
+A: scores from 90 to 100
+B: scores from 75 to 89
+C: scores from 50 to 74
+D: scores from 25 to 49
+E: scores from 1 to 24
+What does it look like in my CRM?
+Here is an example of what the fields can look like in Salesforce.
+What are the MadKudu field type requirements?
+For exact specifications of the fields to create, please refer to these field specifications.
+Do I have to display all these fields?
+You can decide which fields you would like to display for your CRM users, based on the level of information you want to provide and the usage you make of the models.
+Very often, customers use the Customer Fit model to make a first filter and then the Lead Grade to prioritize, among the qualified leads, the ones that are the most engaged.
+Can I rename the standard MadKudu attributes?
+This is possible only if you are on the Enterprise plan. We strongly recommend the use of the “mk_ prefix” naming convention. It allows you to always know which fields are populated by MadKudu and which are not.
+Can I add aggregated behavioral attributes?
+Yes, this is possible if you are on the Enterprise plan. MadKudu syncs a wide variety of attributes into your CRM. For example, you can create a “number of users invited” aggregation that calculates how many users were invited. This aggregation is then synced to your salesforce lead profile.
+Can the MadKudu team help with adding these Salesforce fields?
+Yes - this is a key step in your onboarding and will be discussed with your Customer Success team.
+Where do I set up the mapping of MadKudu Intelligence to my Salesforce fields?
+You can do this in MadKudu's App, under Settings > Push
+More details here >> How to push MadKudu Intelligence to your integrations?
+Was this article helpful?
+Yes No
+0 out of 0 found this helpful
+Have more questions? Submit a request
+Return to top
+Related articles
+MadKudu field names and specifications
+What are the different models?
+Salesforce
+Account Fit Scoring with MadKudu
+Marketo
