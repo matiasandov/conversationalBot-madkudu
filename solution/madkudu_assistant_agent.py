@@ -81,13 +81,13 @@ def start_chain(retriever):
    #2.1 Create Prompt containing Contextual knowledge retrived from the vectorstore
     prompt = ChatPromptTemplate.from_messages(
         [
-        ("system", "as customer support agent named Matias, respond precisely the user's questions based on the below context:\n\n{context}"),
+        ("system", "As a customer support agent named Matias for a company called Madkudu, respond precisely the user's questions based on the below context (If you do not find the answer mention the user to visit https://support.madkudu.com/hc/en-us) :\n\n{context}"),
         # this is the variable that should be received where the conversation is going to be stored
         MessagesPlaceholder(variable_name="chat_history"),
         ("user", "{input}")
     ])
     
-    #2.2 Chain to access to context
+    #2.2 Chain to answer with context
     document_chain = create_stuff_documents_chain(llm, prompt)
     
     #3.1 Prompt that is going to be able to answer the LAST MESSAGE given the history
@@ -95,14 +95,14 @@ def start_chain(retriever):
         
         MessagesPlaceholder(variable_name="chat_history"),
         ("user", "{input}"),
-        ("user", "Use the above conversation to generate a search query to look up in order to get information relevant to the conversation. If you do not find the answer mention the user to visit https://support.madkudu.com/hc/en-us ")
+        ("user", "Use the above conversation to generate a search query to look up in order to get information relevant to the conversation.")
     ])
 
-    #3.2 chain to answer past history and retrives similar vector from the database to the (context)
+    #3.2 chain to answer past history and retrives similar vector from the database to the context
     retriever_chain = create_history_aware_retriever(llm, retriever, last_msg_prompt)
 
     #4. Conversational chain - join the two chains 
-    #   stores conversation and answers with context(RAG)
+    #   stores conversation/queries context from the dcomuents     and answers with context(RAG)
     conversational_retrieval_chain = create_retrieval_chain(retriever_chain, document_chain)
     
     return conversational_retrieval_chain
